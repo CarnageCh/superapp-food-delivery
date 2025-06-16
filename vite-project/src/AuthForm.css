@@ -1,0 +1,133 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #d4145a 0%, #fbb03b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Remove z-index or set to 0 */
+  z-index: 0;
+  pointer-events: none; /* So clicks pass through the background */
+}
+
+.auth-card {
+  position: relative;
+  z-index: 1; /* Make sure card is above background */
+  pointer-events: auto; /* Enable interaction */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  padding: 40px 35px 30px 35px;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.auth-input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.auth-input:focus {
+  border: 1.5px solid #d4145a;
+}
+
+.auth-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 18px;
+  color: #555;
+}
+
+.auth-checkbox-label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #d4145a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s;
+}
+
+.auth-btn:hover {
+  background: #b0134d;
+}
+
+.auth-divider {
+  margin: 18px 0 10px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.auth-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.auth-social-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #444;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.auth-social-btn:hover {
+  background: #f1f1f1;
+}
+
+.auth-footer {
+  font-size: 14px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.auth-footer a {
+  color: #d4145a;
+  text-decoration: none;
+  font-weight: 500;
+}
+.auth-footer a:hover {
+  text-decoration: underline;
+}
