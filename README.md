@@ -1,9 +1,9 @@
-#AOL Software Engineering
+# AOL Software Engineering
 AI chatbot
 Web Application
 for food based recommendation, in search of diet, mood and price.
 
-#Requirements
+# Requirements
 Install Vite and Node.js
 
-#How to run
+# How to run
